@@ -12,6 +12,8 @@
 		CDDCFCFD1DEE9ECE00E5D112 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDDCFCFB1DEE9ECE00E5D112 /* Main.storyboard */; };
 		CDDCFCFF1DEE9ECE00E5D112 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDDCFCFE1DEE9ECE00E5D112 /* Assets.xcassets */; };
 		CDDCFD021DEE9ECE00E5D112 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDDCFD001DEE9ECE00E5D112 /* LaunchScreen.storyboard */; };
+		CDDCFD121DEEA41000E5D112 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDDCFD101DEEA41000E5D112 /* RxCocoa.framework */; };
+		CDDCFD131DEEA41000E5D112 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDDCFD111DEEA41000E5D112 /* RxSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		CDDCFCFE1DEE9ECE00E5D112 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDDCFD011DEE9ECE00E5D112 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDDCFD031DEE9ECE00E5D112 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDDCFD101DEEA41000E5D112 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		CDDCFD111DEEA41000E5D112 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDDCFD121DEEA41000E5D112 /* RxCocoa.framework in Frameworks */,
+				CDDCFD131DEEA41000E5D112 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +46,7 @@
 			children = (
 				CDDCFCF61DEE9ECE00E5D112 /* RXSwift Weather */,
 				CDDCFCF51DEE9ECE00E5D112 /* Products */,
+				CDDCFD0F1DEEA40C00E5D112 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +61,71 @@
 		CDDCFCF61DEE9ECE00E5D112 /* RXSwift Weather */ = {
 			isa = PBXGroup;
 			children = (
-				CDDCFCF71DEE9ECE00E5D112 /* AppDelegate.swift */,
-				CDDCFCF91DEE9ECE00E5D112 /* ViewController.swift */,
-				CDDCFCFB1DEE9ECE00E5D112 /* Main.storyboard */,
-				CDDCFCFE1DEE9ECE00E5D112 /* Assets.xcassets */,
-				CDDCFD001DEE9ECE00E5D112 /* LaunchScreen.storyboard */,
-				CDDCFD031DEE9ECE00E5D112 /* Info.plist */,
+				CDDCFD0D1DEEA03100E5D112 /* View */,
+				CDDCFD0A1DEE9FC900E5D112 /* Controller */,
+				CDDCFD0B1DEE9FCF00E5D112 /* ViewModel */,
+				CDDCFD091DEE9FB300E5D112 /* Model */,
+				CDDCFD0C1DEE9FF000E5D112 /* Networking */,
+				CDDCFD0E1DEEA05400E5D112 /* Supporting Files */,
 			);
 			path = "RXSwift Weather";
+			sourceTree = "<group>";
+		};
+		CDDCFD091DEE9FB300E5D112 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CDDCFD0A1DEE9FC900E5D112 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CDDCFCF91DEE9ECE00E5D112 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		CDDCFD0B1DEE9FCF00E5D112 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		CDDCFD0C1DEE9FF000E5D112 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		CDDCFD0D1DEEA03100E5D112 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CDDCFCFB1DEE9ECE00E5D112 /* Main.storyboard */,
+				CDDCFD001DEE9ECE00E5D112 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		CDDCFD0E1DEEA05400E5D112 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CDDCFCF71DEE9ECE00E5D112 /* AppDelegate.swift */,
+				CDDCFCFE1DEE9ECE00E5D112 /* Assets.xcassets */,
+				CDDCFD031DEE9ECE00E5D112 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CDDCFD0F1DEEA40C00E5D112 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDDCFD101DEEA41000E5D112 /* RxCocoa.framework */,
+				CDDCFD111DEEA41000E5D112 /* RxSwift.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +326,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = W8T4AU8AM8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "RXSwift Weather/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.delmarz.RXSwift-Weather";
@@ -275,6 +343,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = W8T4AU8AM8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "RXSwift Weather/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.delmarz.RXSwift-Weather";
@@ -302,6 +374,7 @@
 				CDDCFD081DEE9ECE00E5D112 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
