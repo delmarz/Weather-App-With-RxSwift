@@ -14,6 +14,10 @@
 		CDDCFD021DEE9ECE00E5D112 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDDCFD001DEE9ECE00E5D112 /* LaunchScreen.storyboard */; };
 		CDDCFD121DEEA41000E5D112 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDDCFD101DEEA41000E5D112 /* RxCocoa.framework */; };
 		CDDCFD131DEEA41000E5D112 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDDCFD111DEEA41000E5D112 /* RxSwift.framework */; };
+		CDDCFD151DEEA48500E5D112 /* WeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDCFD141DEEA48500E5D112 /* WeatherAPI.swift */; };
+		CDDCFD171DEEA4E100E5D112 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDCFD161DEEA4E100E5D112 /* WeatherViewModel.swift */; };
+		CDDCFD191DEEA6A600E5D112 /* DarkSkyWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDCFD181DEEA6A600E5D112 /* DarkSkyWeatherModel.swift */; };
+		CDDCFD1C1DEEA70700E5D112 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDCFD1B1DEEA70700E5D112 /* Constant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		CDDCFD031DEE9ECE00E5D112 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDDCFD101DEEA41000E5D112 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		CDDCFD111DEEA41000E5D112 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		CDDCFD141DEEA48500E5D112 /* WeatherAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherAPI.swift; sourceTree = "<group>"; };
+		CDDCFD161DEEA4E100E5D112 /* WeatherViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		CDDCFD181DEEA6A600E5D112 /* DarkSkyWeatherModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DarkSkyWeatherModel.swift; sourceTree = "<group>"; };
+		CDDCFD1B1DEEA70700E5D112 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +69,7 @@
 		CDDCFCF61DEE9ECE00E5D112 /* RXSwift Weather */ = {
 			isa = PBXGroup;
 			children = (
+				CDDCFD1A1DEEA6FD00E5D112 /* Utils */,
 				CDDCFD0D1DEEA03100E5D112 /* View */,
 				CDDCFD0A1DEE9FC900E5D112 /* Controller */,
 				CDDCFD0B1DEE9FCF00E5D112 /* ViewModel */,
@@ -74,6 +83,7 @@
 		CDDCFD091DEE9FB300E5D112 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CDDCFD181DEEA6A600E5D112 /* DarkSkyWeatherModel.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -89,6 +99,7 @@
 		CDDCFD0B1DEE9FCF00E5D112 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				CDDCFD161DEEA4E100E5D112 /* WeatherViewModel.swift */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -96,6 +107,7 @@
 		CDDCFD0C1DEE9FF000E5D112 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				CDDCFD141DEEA48500E5D112 /* WeatherAPI.swift */,
 			);
 			name = Networking;
 			sourceTree = "<group>";
@@ -126,6 +138,14 @@
 				CDDCFD111DEEA41000E5D112 /* RxSwift.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CDDCFD1A1DEEA6FD00E5D112 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CDDCFD1B1DEEA70700E5D112 /* Constant.swift */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,8 +221,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDDCFD151DEEA48500E5D112 /* WeatherAPI.swift in Sources */,
+				CDDCFD171DEEA4E100E5D112 /* WeatherViewModel.swift in Sources */,
+				CDDCFD191DEEA6A600E5D112 /* DarkSkyWeatherModel.swift in Sources */,
 				CDDCFCFA1DEE9ECE00E5D112 /* ViewController.swift in Sources */,
 				CDDCFCF81DEE9ECE00E5D112 /* AppDelegate.swift in Sources */,
+				CDDCFD1C1DEEA70700E5D112 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
