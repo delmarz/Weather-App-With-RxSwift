@@ -8,7 +8,7 @@
 
 import Foundation
 
-class DarkSkyWeatherModel {
+struct DarkSkyWeatherModel {
     
     private var _summary: String!
     private var _humidity: Int!
