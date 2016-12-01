@@ -42,8 +42,9 @@ struct WeatherViewModel {
                            let daily = root["daily"] as? JSONDictionary,
                            let data = daily["data"] as? JSONArray {
 
-                            for (_, items) in data.enumerated() {
-                                let weather = DarkSkyWeatherModel(data: items as! JSONDictionary)
+                            for (index, items) in data.enumerated() {
+                                var weather = DarkSkyWeatherModel(data: items as! JSONDictionary)
+                                weather.numberDays = index + 1
                                 weatherArray.append(weather)
                             }
                         }

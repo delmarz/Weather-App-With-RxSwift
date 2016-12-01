@@ -36,9 +36,8 @@ class ViewController: UIViewController {
             .do(onNext: { _ in
                 UIApplication.shared.isNetworkActivityIndicatorVisible = false
             })
-            .drive(tableView.rx.items(cellIdentifier: "CellWeather")) { index, weather, cell in
-            cell.textLabel?.text = "Day \(index + 1): \(weather.summary)"
-            cell.detailTextLabel?.text = "Wind Speed: \(weather.windSpeed)"
+            .drive(tableView.rx.items(cellIdentifier: "CellWeather", cellType: WeatherCell.self)) { index, weather, cell in
+                cell.weather = weather
             }.addDisposableTo(disposeBag)
         
         searchBar.rx.text.orEmpty

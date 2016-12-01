@@ -9,10 +9,10 @@
 import Foundation
 
 struct DarkSkyWeatherModel {
-    
+    var numberDays = 0
     private var _summary: String!
-    private var _humidity: Int!
-    private var _windSpeed: Int!
+    private var _humidity: Double!
+    private var _windSpeed: Double!
     
     var summary: String {
         if _summary == nil {
@@ -21,14 +21,14 @@ struct DarkSkyWeatherModel {
         return _summary
     }
     
-    var humidity: Int {
+    var humidity: Double {
         if _humidity == nil {
             return 0
         }
         return _humidity
     }
     
-    var windSpeed: Int {
+    var windSpeed: Double {
         if _windSpeed == nil {
             return 0
         }
@@ -39,13 +39,11 @@ struct DarkSkyWeatherModel {
         if let summary = data["summary"] as? String {
             _summary = summary
         }
-        if let humidity = data["humidity"] as? Int {
+        if let humidity = data["humidity"] as? Double {
             _humidity = humidity
         }
-        if let windSpeed = data["windSpeed"] as? Int {
+        if let windSpeed = data["windSpeed"] as? Double {
             _windSpeed = windSpeed
         }
     }
-
-    
 }

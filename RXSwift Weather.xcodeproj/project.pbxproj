@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD876D061DEFAEA5003A0F5D /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD876D051DEFAEA5003A0F5D /* WeatherCell.swift */; };
 		CDDCFCF81DEE9ECE00E5D112 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDCFCF71DEE9ECE00E5D112 /* AppDelegate.swift */; };
 		CDDCFCFA1DEE9ECE00E5D112 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDCFCF91DEE9ECE00E5D112 /* ViewController.swift */; };
 		CDDCFCFD1DEE9ECE00E5D112 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDDCFCFB1DEE9ECE00E5D112 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CD876D051DEFAEA5003A0F5D /* WeatherCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
 		CDDCFCF41DEE9ECE00E5D112 /* RXSwift Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RXSwift Weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDDCFCF71DEE9ECE00E5D112 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDDCFCF91DEE9ECE00E5D112 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				CDDCFCF91DEE9ECE00E5D112 /* ViewController.swift */,
+				CD876D051DEFAEA5003A0F5D /* WeatherCell.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 			files = (
 				CDDCFD171DEEA4E100E5D112 /* WeatherViewModel.swift in Sources */,
 				CDDCFD191DEEA6A600E5D112 /* DarkSkyWeatherModel.swift in Sources */,
+				CD876D061DEFAEA5003A0F5D /* WeatherCell.swift in Sources */,
 				CDDCFCFA1DEE9ECE00E5D112 /* ViewController.swift in Sources */,
 				CDDCFCF81DEE9ECE00E5D112 /* AppDelegate.swift in Sources */,
 				CDDCFD1C1DEEA70700E5D112 /* Constant.swift in Sources */,
