@@ -18,13 +18,15 @@ class WeatherCell: UITableViewCell {
     }
     
     @IBOutlet weak var weatheStatusLabel: UILabel!
-    @IBOutlet weak var weatherHumidityLabel: UILabel!
+    @IBOutlet weak var weatherDewPointLabel: UILabel!
     @IBOutlet weak var weatherWindSpeedLabel: UILabel!
+    @IBOutlet weak var weatherImageView: UIImageView!
     
     
     func updateUI() {
         weatheStatusLabel.text = "Day \(weather!.numberDays): \(weather!.summary)"
-        weatherHumidityLabel.text = "\(weather!.humidity) "
+        weatherDewPointLabel.text = "\(weather!.dewPoint) F"
         weatherWindSpeedLabel.text = "\(weather!.windSpeed) SI"
+        weatherImageView.image = UIImage(named: weather!.icon)
     }
 }

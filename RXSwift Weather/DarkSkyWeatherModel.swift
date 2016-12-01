@@ -11,8 +11,9 @@ import Foundation
 struct DarkSkyWeatherModel {
     var numberDays = 0
     private var _summary: String!
-    private var _humidity: Double!
+    private var _dewPoint: Double!
     private var _windSpeed: Double!
+    private var _icon: String!
     
     var summary: String {
         if _summary == nil {
@@ -21,11 +22,11 @@ struct DarkSkyWeatherModel {
         return _summary
     }
     
-    var humidity: Double {
-        if _humidity == nil {
+    var dewPoint: Double {
+        if _dewPoint == nil {
             return 0
         }
-        return _humidity
+        return _dewPoint
     }
     
     var windSpeed: Double {
@@ -35,15 +36,25 @@ struct DarkSkyWeatherModel {
         return _windSpeed
     }
     
+    var icon: String {
+        if _icon == nil {
+            return ""
+        }
+        return _icon
+    }
+    
     init(data: JSONDictionary) {
         if let summary = data["summary"] as? String {
             _summary = summary
         }
-        if let humidity = data["humidity"] as? Double {
-            _humidity = humidity
+        if let dewPoint = data["dewPoint"] as? Double {
+            _dewPoint = dewPoint
         }
         if let windSpeed = data["windSpeed"] as? Double {
             _windSpeed = windSpeed
+        }
+        if let icon = data["icon"] as? String {
+            _icon = icon
         }
     }
 }
