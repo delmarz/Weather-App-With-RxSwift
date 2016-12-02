@@ -22,7 +22,6 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        searchBar.text = "10.3157,123.8854"
         searchBar.placeholder = "Enter Lat and Long (10.3157,123.8854))"
     }
     

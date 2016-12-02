@@ -28,5 +28,6 @@ class WeatherCell: UITableViewCell {
         weatherDewPointLabel.text = "\(weather!.dewPoint) F"
         weatherWindSpeedLabel.text = "\(weather!.windSpeed) SI"
         weatherImageView.image = UIImage(named: weather!.icon)
+        print("timezone ---> \(weather?.timeZone)")
     }
 }

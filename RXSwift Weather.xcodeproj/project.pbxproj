@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		CD876D061DEFAEA5003A0F5D /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD876D051DEFAEA5003A0F5D /* WeatherCell.swift */; };
+		CD876D0C1DF08467003A0F5D /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDDCFD101DEEA41000E5D112 /* RxCocoa.framework */; };
+		CD876D0E1DF08470003A0F5D /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CDDCFD101DEEA41000E5D112 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CD876D111DF084C5003A0F5D /* RxDataSources.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD876D0F1DF084B8003A0F5D /* RxDataSources.framework */; };
+		CD876D121DF084C5003A0F5D /* RxDataSources.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CD876D0F1DF084B8003A0F5D /* RxDataSources.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CDDCFCF81DEE9ECE00E5D112 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDCFCF71DEE9ECE00E5D112 /* AppDelegate.swift */; };
 		CDDCFCFA1DEE9ECE00E5D112 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDCFCF91DEE9ECE00E5D112 /* ViewController.swift */; };
 		CDDCFCFD1DEE9ECE00E5D112 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDDCFCFB1DEE9ECE00E5D112 /* Main.storyboard */; };
 		CDDCFCFF1DEE9ECE00E5D112 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDDCFCFE1DEE9ECE00E5D112 /* Assets.xcassets */; };
 		CDDCFD021DEE9ECE00E5D112 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDDCFD001DEE9ECE00E5D112 /* LaunchScreen.storyboard */; };
-		CDDCFD121DEEA41000E5D112 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDDCFD101DEEA41000E5D112 /* RxCocoa.framework */; };
 		CDDCFD131DEEA41000E5D112 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDDCFD111DEEA41000E5D112 /* RxSwift.framework */; };
 		CDDCFD171DEEA4E100E5D112 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDCFD161DEEA4E100E5D112 /* WeatherViewModel.swift */; };
 		CDDCFD191DEEA6A600E5D112 /* DarkSkyWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDCFD181DEEA6A600E5D112 /* DarkSkyWeatherModel.swift */; };
 		CDDCFD1C1DEEA70700E5D112 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDCFD1B1DEEA70700E5D112 /* Constant.swift */; };
-		CDDCFD1E1DEEB6E000E5D112 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CDDCFD101DEEA41000E5D112 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CDDCFD201DEEB6E000E5D112 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CDDCFD111DEEA41000E5D112 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
@@ -29,8 +31,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				CD876D121DF084C5003A0F5D /* RxDataSources.framework in Embed Frameworks */,
+				CD876D0E1DF08470003A0F5D /* RxCocoa.framework in Embed Frameworks */,
 				CDDCFD201DEEB6E000E5D112 /* RxSwift.framework in Embed Frameworks */,
-				CDDCFD1E1DEEB6E000E5D112 /* RxCocoa.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -39,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		CD876D051DEFAEA5003A0F5D /* WeatherCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
+		CD876D0F1DF084B8003A0F5D /* RxDataSources.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxDataSources.framework; path = Carthage/Build/iOS/RxDataSources.framework; sourceTree = "<group>"; };
 		CDDCFCF41DEE9ECE00E5D112 /* RXSwift Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RXSwift Weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDDCFCF71DEE9ECE00E5D112 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDDCFCF91DEE9ECE00E5D112 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,8 +62,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDDCFD121DEEA41000E5D112 /* RxCocoa.framework in Frameworks */,
 				CDDCFD131DEEA41000E5D112 /* RxSwift.framework in Frameworks */,
+				CD876D0C1DF08467003A0F5D /* RxCocoa.framework in Frameworks */,
+				CD876D111DF084C5003A0F5D /* RxDataSources.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +148,7 @@
 		CDDCFD0F1DEEA40C00E5D112 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CD876D0F1DF084B8003A0F5D /* RxDataSources.framework */,
 				CDDCFD101DEEA41000E5D112 /* RxCocoa.framework */,
 				CDDCFD111DEEA41000E5D112 /* RxSwift.framework */,
 			);

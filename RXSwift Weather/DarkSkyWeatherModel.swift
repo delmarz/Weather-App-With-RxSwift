@@ -10,6 +10,7 @@ import Foundation
 
 struct DarkSkyWeatherModel {
     var numberDays = 0
+    var timeZone = ""
     private var _summary: String!
     private var _dewPoint: Double!
     private var _windSpeed: Double!

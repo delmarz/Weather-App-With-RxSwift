@@ -37,14 +37,15 @@ struct WeatherViewModel {
                     .rx.json(url: url)
                     .map({
                         var weatherArray = [DarkSkyWeatherModel]()
-                        
                         if let root = $0 as? JSONDictionary,
                            let daily = root["daily"] as? JSONDictionary,
                            let data = daily["data"] as? JSONArray {
-
+                           let timeZone = root["timezone"] as? String
+                            
                             for (index, items) in data.enumerated() {
                                 var weather = DarkSkyWeatherModel(data: items as! JSONDictionary)
                                 weather.numberDays = index + 1
+                                weather.timeZone = timeZone ?? ""
                                 weatherArray.append(weather)
                             }
                         }
